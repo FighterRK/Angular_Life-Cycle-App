@@ -1,0 +1,120 @@
+<header>
+  
+<!-- As a heading -->
+<nav class="navbar navbar-light mb-4" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Talk With Strangers</span>
+    <span><button type="button" (click)=" goToLogin()" class="btn btn-dark">Logout</button>
+    </span>
+  </div>
+</nav>
+</header>
+<section>
+<div class="container p-3">
+
+ 
+
+  
+  <div class="card1-left">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97S-p6cyxKdROanT4E_SA_cI6NR0onHZwDee_AxWrYxwvA-hraSUk6GqntuA-wFkQDeM&usqp=CAU" alt="">
+    </div>
+    <div class="chat-content">
+      <p>
+        Hi..
+        <br>How r u?
+      </p>
+      <time class="chat-time" datetime="2015-07-01T11:37">11:37:08 am</time>
+    </div>
+
+  </div>
+
+  
+  <div class="card1">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaED9vQHdhxnXLOTVAuIYGatYtUC-8qSOvpVdnC3bD2jMBCxOsS1PutlUQ0WsgkqG4YLA&usqp=CAU" alt="">
+    </div>
+    <div class="chat-content">
+      <p>
+        hello..
+        <br>Good.
+      </p>
+      <time class="chat-time" datetime="2015-07-01T11:37">11:39:01 am</time>
+    </div>
+
+  </div>
+
+  
+  <div class="card1-left">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97S-p6cyxKdROanT4E_SA_cI6NR0onHZwDee_AxWrYxwvA-hraSUk6GqntuA-wFkQDeM&usqp=CAU" alt="">
+    </div>
+    <div class="chat-content">
+      <p>
+        whats u r name?
+        <br>
+      </p>
+      <time class="chat-time" datetime="2015-07-01T11:37">11:40:04 am</time>
+    </div>
+
+  </div>
+
+  <div class="card1">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaED9vQHdhxnXLOTVAuIYGatYtUC-8qSOvpVdnC3bD2jMBCxOsS1PutlUQ0WsgkqG4YLA&usqp=CAU" alt="">
+    </div>
+    <div class="chat-content">
+      <p>
+        jane
+        
+      </p>
+      <time class="chat-time" datetime="2015-07-01T11:37">11:40:08 am</time>
+    </div>
+
+  </div>
+
+  
+  <div class="card1-left">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97S-p6cyxKdROanT4E_SA_cI6NR0onHZwDee_AxWrYxwvA-hraSUk6GqntuA-wFkQDeM&usqp=CAU" alt="">
+    </div>
+    <div class="chat-content">
+      <p>
+        i'm akshay
+      </p>
+      <time class="chat-time" datetime="2015-07-01T11:37">11:41:01 am</time>
+    </div>
+
+  </div>
+
+
+
+  <form >
+    <app-second-child [secondChildn]="dataChild" *ngIf="DestroyContent" >
+     
+      <h1>Projected Content : {{ dataChild}}</h1>
+    </app-second-child>
+    
+    
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="dataChild" placeholder="Say something" name="text">
+      <span class="input-group-btn">
+        <button class="btn btn-primary " (click)="Destroy()" type="button">Clear</button>
+       
+      </span>
+     
+    </div>
+  </form>
+</div>
+</section>
+
+<footer>
+<div class="footer">
+  <div class="title1">Copyright © </div>
+  <div class="title2">
+      <div class="t1">Term of Use</div>
+      <div class="slash">|</div>
+      <div class="t2">Privacy Policy</div>
+  </div>
+</div>
+</footer>
